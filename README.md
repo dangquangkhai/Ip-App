@@ -1,1 +1,1 @@
-Program prin your public ip
+Program print your public ip
