@@ -1,0 +1,22 @@
+#!/bin/bash
+
+#################################
+#                               #
+# Program: Print your public ip #
+# Author: Khai Dang             #
+# version: 1.0                  #
+#                               #
+#################################
+
+tmp=$(which jq); 
+if [ -f !tmp ] ; then
+   echo "Jq is not installed ";
+   echo "You must install jq to run this script";
+   echo "Type \"sudo apt install jq\"";
+else
+   output=$(curl -s api.ipify.org);
+   time=$(date +"%X"); #Get Current Time
+   img=$(pwd)/img/ip.png; #Get image path
+   country_code=$(curl -s freegeoip.net/json/171.233.196.210 | jq -r '.country_code')
+   notify-send "Your public ip                 $time" "$output $country_code" -t 5000 -i "$img";
+  fi

@@ -1,0 +1,15 @@
+{
+  "name": "Ip_App",
+  "version": "1.0",
+  "description": "Print your public ip",
+  "keywords": "IP, Bash",
+  "author": "Khai Dang",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dangquangkhai/Ip-App.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dangquangkhai/Ip-App/issues"
+  },
+  "homepage": "https://github.com/dangquangkhai/Ip-App"
+}
